@@ -15,6 +15,10 @@ parameters:
   - windows-latest
   - ubuntu-latest
   - macOS-latest
+- name: test
+  displayName: Run Tests?
+  type: boolean
+  default: false
 
 pool:
   vmImage: ${{parameters.name}}
